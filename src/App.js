@@ -1,34 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Greetings from './Greetings';
 
 function App() {
-  const student = [
-    { srno: 1, name: 'Rutuja', marks: 100 },
-    { srno: 2, name: 'Shravani', marks: 90 },
-    { srno: 3, name: 'Trusha', marks: 100 },
-    { srno: 4, name: 'Gaurav', marks: 90 },
-    { srno: 5, name: 'Shardul', marks: 100 },
-    { srno: 6, name: 'Anamika', marks: 90 },
-    { srno: 7, name: 'Ayush', marks: 100 },
 
-  ]
   return (
-    <table border='1'>
-      <tr>
-        <th>srno</th>
-        <th>name</th>
-        <th>marks</th>
-      </tr>
-      {student.map((singleElement) => {
-        return  <tr className={singleElement.marks===100?"backgroundBlack":"backgroundWhite" }>
-          <td>{singleElement.srno}</td>
-          <td>{singleElement.name}</td>
-          <td>{singleElement.marks}</td>
-        </tr>   
-   
-  })}
-    </table>
+    <Greetings/>
   );
-}
 
+}
 export default App;
