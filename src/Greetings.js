@@ -1,6 +1,8 @@
-function Greetings(){
-    return(
-        <h1>Hello World</h1>
-    )
+function Greetings(props){
+      return (
+        <div>
+          <h2>Hello {props.name}</h2>
+        </div>
+      );
 }
 export default Greetings;

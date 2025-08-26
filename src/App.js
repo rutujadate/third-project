@@ -3,10 +3,10 @@ import './App.css';
 import Greetings from './Greetings';
 
 function App() {
+  // const userName="Rutuja";
 
   return (
-    <Greetings/>
+    <Greetings name="Rutuja"/>
   );
-
 }
 export default App;
