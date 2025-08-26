@@ -3,10 +3,26 @@ import './App.css';
 import Greetings from './Greetings';
 
 function App() {
-  // const userName="Rutuja";
+  const student = [
+    { Name: "RUTUJA" },
+    { Name: "SHRAVANI" },
+    { Name: "TRUSHA" },
+    { Name: "GAURAV" },
+    { Name: "SHARDUL" },
+    { Name: "AYUSH" },
+    { Name: "APEKSHA" },
+    { Name: "NIKITA" },
+    { Name: "ANAMIKA" },
+    { Name: "ISHWARI MAM" },
+  ]
+
 
   return (
-    <Greetings name="Rutuja"/>
+      <div>{<Greetings username={student}/>}</div>
+
+  
+
   );
+  
 }
 export default App;

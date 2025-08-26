@@ -1,7 +1,11 @@
 function Greetings(props){
       return (
         <div>
-          <h2>Hello {props.name}</h2>
+            {props.username.map((singleElement)=>{
+                return <h2>Hello {singleElement.Name}</h2>
+
+
+            })}
         </div>
       );
 }
